@@ -1,0 +1,7 @@
+export const App = () => {
+  return (
+    <>
+      <h1>react-hw-05-movies</h1>
+    </>
+  );
+};
