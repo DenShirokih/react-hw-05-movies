@@ -1,10 +1,10 @@
 import { useFetchDetailsOneFilm } from 'hooks/useFetchDetailsMovie';
 
 import { MovieDetails } from 'components/MovieDetails/MovieDetails';
-import { NavLink, Outlet } from 'react-router-dom';
+import {  Outlet } from 'react-router-dom';
 
 export const MovieDetailsView = () => {
-  const { filmDetails, isLoading } = useFetchDetailsOneFilm();
+  const { filmDetails } = useFetchDetailsOneFilm();
 
   return (
     <div>

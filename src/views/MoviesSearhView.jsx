@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useSearchParams, Outlet } from 'react-router-dom';
 import { useFetchSearchMovies } from 'hooks/useFetchSearchMovies';
 import { SearchBar } from 'components/SearchBar/SearchBar';
-import { MoviesList } from 'components/MoviesList/MoviesList';
 import { SearchMoviesCards } from 'components/SearchMoviesCards/SearchMoviesCards';
 
 export const MoviesSearhView = () => {

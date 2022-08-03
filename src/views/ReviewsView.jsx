@@ -2,7 +2,7 @@ import { useFetchReviewsMovie } from 'hooks/useFetchReviewsMovie';
 import { ReviewsContainer } from 'components/Reviews/Reviews.styled';
 import { Reviews } from 'components/Reviews/Reviews';
 export const ReviewsView = () => {
-  const { reviews, isLoading } = useFetchReviewsMovie();
+  const { reviews } = useFetchReviewsMovie();
   console.log(reviews);
 
   return (
