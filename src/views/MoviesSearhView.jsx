@@ -7,7 +7,7 @@ import { SearchMoviesCards } from 'components/SearchMoviesCards/SearchMoviesCard
 export const MoviesSearhView = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
-  const { MoviesBySearch, isLoading } = useFetchSearchMovies(searchQuery);
+  const { MoviesBySearch } = useFetchSearchMovies(searchQuery);
 
   const currentSearchQuery = searchParams.get('query');
 
