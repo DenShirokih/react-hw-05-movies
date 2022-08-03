@@ -1,15 +1,40 @@
-@import-normalize; /* bring in normalize.css styles */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  line-height: 1.5;
+  background-color: #fff;
+  color: #212121;
+  font-family:  'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Noto Sans','Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+*, *::before, 
+    *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+li{
+  text-decoration: none;
 }
