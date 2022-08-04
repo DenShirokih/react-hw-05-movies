@@ -1,9 +1,9 @@
 import { useFetchReviewsMovie } from 'hooks/useFetchReviewsMovie';
 import { ReviewsContainer } from 'components/Reviews/Reviews.styled';
 import { Reviews } from 'components/Reviews/Reviews';
-export const ReviewsView = () => {
+const ReviewsView = () => {
   const { reviews } = useFetchReviewsMovie();
-  console.log(reviews);
+
 
   return (
     <ReviewsContainer>
@@ -13,3 +13,5 @@ export const ReviewsView = () => {
     </ReviewsContainer>
   );
 };
+
+export default ReviewsView;

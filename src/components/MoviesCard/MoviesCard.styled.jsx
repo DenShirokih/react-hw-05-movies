@@ -5,6 +5,11 @@ export const MovieTitle = styled.h2``;
 
 export const MovieLi = styled.li`
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  &:hover {
+    transform: translate(-5px, -5px);
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
 
   width: 250px;
   text-align: center;

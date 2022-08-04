@@ -4,7 +4,7 @@ import { useFetchSearchMovies } from 'hooks/useFetchSearchMovies';
 import { SearchBar } from 'components/SearchBar/SearchBar';
 import { SearchMoviesCards } from 'components/SearchMoviesCards/SearchMoviesCards';
 
-export const MoviesSearhView = () => {
+const MoviesSearhView = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
   const { MoviesBySearch } = useFetchSearchMovies(searchQuery);
@@ -30,3 +30,4 @@ export const MoviesSearhView = () => {
     </>
   );
 };
+export default MoviesSearhView;

@@ -1,6 +1,6 @@
 import { useFetchCreditsMovie } from 'hooks/useFetchCreditsMovie';
 import { CardsList } from 'components/CastList/CastList';
-export const CastView = () => {
+const CastView = () => {
   const { cast, isLoading } = useFetchCreditsMovie();
 
   return (
@@ -9,3 +9,5 @@ export const CastView = () => {
     </>
   );
 };
+
+export default CastView;

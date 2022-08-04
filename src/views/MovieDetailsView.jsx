@@ -1,9 +1,9 @@
 import { useFetchDetailsOneFilm } from 'hooks/useFetchDetailsMovie';
 
 import { MovieDetails } from 'components/MovieDetails/MovieDetails';
-import {  Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-export const MovieDetailsView = () => {
+const MovieDetailsView = () => {
   const { filmDetails } = useFetchDetailsOneFilm();
 
   return (
@@ -13,3 +13,5 @@ export const MovieDetailsView = () => {
     </div>
   );
 };
+
+export default MovieDetailsView;

@@ -1,7 +1,7 @@
 import { useFetchTrendingMovies } from 'hooks/useFetchTrendingMovies';
 import { MoviesList } from 'components/MoviesList/MoviesList';
 
-export const HomeView = () => {
+const HomeView = () => {
   const { movies } = useFetchTrendingMovies();
   return (
     <div>
@@ -10,3 +10,5 @@ export const HomeView = () => {
     </div>
   );
 };
+
+export default HomeView;
